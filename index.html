@@ -4,31 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learn JS</title>
-    <link rel="stylesheet" href="/boostrap5.css" />
-
-    <link rel="stylesheet" href="/main.css" />
+    <title>To-do List</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <input id="input-value" type="text" />
-    <button type="button" class="btn btn-block btn-primary btn-add">
-      Primary
-    </button>
-
-    <div class="list-wrapper">
-      <ul class="list">
-        
-      </ul>
+    <div class="container">
+      <div class="todo-app">
+        <div class="title" style="display: flex">
+          <h2>Add user Students</h2>
+          <img
+            src="./images/icon.png"
+            alt="icon"
+            style="width: 20px; height: 20px"
+          />
+        </div>
+        <div class="row">
+          <input type="text" class="input-box name" placeholder="Name" />
+          <button onclick="addTask()">Add</button>
+        </div>
+        <div class="row">
+          <input type="text" class="input-box address" placeholder="address" />
+        </div>
+        <div class="row">
+          <input type="text" class="input-box age" placeholder="age" />
+        </div>
+        <ul id="list-container">
+          <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+        </ul>
+      </div>
     </div>
-    <div class="news">
-
-    </div>
-
-    <!-- script external -->
-    <script src="/jquery.js"></script>
-    <script src="/main.js"></script>
-
-    <!-- script internal -->
-    <script></script>
+    <script src="main.js"></script>
+    
   </body>
 </html>
