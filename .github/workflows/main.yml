@@ -17,4 +17,5 @@ jobs:
         server: ftp.tnit.info
         username: learnjs@tnit.info
         password: learnjs.tnit
-        server-dir: /tnit.info/learnjs/
+        server-dir: ./tnit.info/learnjs
+        dry-run: true
