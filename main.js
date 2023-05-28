@@ -42,6 +42,7 @@ const inputName = document.querySelector(".name");
 const inputAddress = document.querySelector(".address");
 const inputAge = document.querySelector(".age");
 const listContainer = document.getElementById("list-container");
+const dateE = document.getElementById("date");
 const arrayUser = [
   {
     name: "toan",
