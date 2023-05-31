@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn JS</title>
-    <link rel="stylesheet" href="/main.css">
-    <style>
-        h1 {
-            color: red;
-        }
-    </style>
-</head>
-<body>
-    <h1 class="heading">Hello</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do List</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        
+        <div class="title" style="display: flex">
+          <h2>Add user Students</h2>
+          <h2 id="date"></h2>
+          <img
+            src="./images/icon.png"
+            alt="icon"
+            style="width: 20px; height: 20px"
+          />
+        </div>
+        <div class="row">
+          <input type="text" class="input-box name" placeholder="Name" />
+          <button onclick="addTask()">Add</button>
+        </div>
+        <div class="row">
+          <input type="text" class="input-box address" placeholder="address" />
+        </div>
+        <div class="row">
+          <input type="text" class="input-box age" placeholder="age" />
+        </div>
+        <ul id="list-container">
+          <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+        </ul>
+      </div>
+    </div>
+    <script src="main.js"></script>
     
-
-    <!-- script external -->
-    <script src="/jquery.js"></script>
-    <script src="/main.js"></script>
-
-    <!-- script internal -->
-    <script>
-    </script>
-</body>
+  </body>
 </html>
